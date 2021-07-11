@@ -3,25 +3,27 @@ const result = document.getElementById("result")
 
 const catchTitle = async () => {
     const baseUrl = 'http://www.omdbapi.com/'
-    const title = document.querySelector("#texto").value
     try {
-        const response = await fetch(`${baseUrl}/?apikey=f105dfc8&t=${title}`)
+        const response = await fetch(`${baseUrl}/?apikey=f105dfc8&s="star wars"&type="movie"&page=1`)
         const data = await response.json()
-        //console.log(title)
-        console.log(data)
         return data
-
     } catch (error) {
         console.error('ALGO SALIO MAL', error)
     }
 }
 
-button.addEventListener('click', () => catchTitle().then(res => {
-    result.innerHTML += `
-    <img src="${res.Poster}" alt="Poster">
-    <p>El titulo de la pelicula es ${res.Title} y su año de estreno es ${res.Year}<p>
-    <p>${res.Plot}</p>
-    `
+document.addEventListener('DOMContentLoaded', () => catchTitle().then(res => {
+    const list = res.Search
+    list.map(l => {result.innerHTML += `
+        <div class="card col-12 col-md-6 col-lg-4">
+            <img src="${l.Poster}" alt="Poster" style="width: 100%">
+            <div class="containerCard">
+                <h4><b>Titulo: ${l.Title}</b></h4>
+                <p>Valor $10.000</p>
+            </div>
+            <button>Detalles</button> <button>Comprar</button>
+        </div>
+    `})
 }))
 
 

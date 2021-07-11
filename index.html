@@ -7,29 +7,40 @@
     <meta name="author" content="Daniel Canales Vallejos">
     <meta name="description" content="Carrito de compras en Javascript">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <!--CSS Style-->
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Prueba Ecomsur</title>
 </head>
 
 <body>
+    <!-- HEADER -->
     <header>
-        <div id="navegador">
-            <ul>
-                <li><a href="#">Elemento 1</a></li>
-                <li><a href="#">Elemento 2</a></li>
-                <li><a href="#">Elemento 3</a></li>
-                <li><a href="#">Elemento 4</a></li>
-            </ul>
+        <div class="hero_seccion">
+            <h4>CONSTRUYE TU</h4>
+            <h1>COLECCION DE PELICULAS</h1>
         </div>
     </header>
-    <main id='App'>
-        <div class='container row'>
-            <div class="col-md-6"><input id="texto" type="text"> <button id="button">SEARCH</button></div>
-            <div id='result' class="col-md-6"></div>
-        </div>
 
+    <!-- MAIN -->
+    <main id='App' class="container row">
+        <div class="shopping-cart col-12 col-lg-4">
+            <h2>Carrito de compras</h2> <i class="fas fa-shopping-cart fa-2x"></i>
+        </div>
+        <div id="result" class="col-12 col-lg-8 row"></div>
+        </div>
     </main>
+
+    <!-- FOOTER -->
     <footer></footer>
+
+    <!-- Javascript -->
     <script src="./assets/js/script.js"></script>
 </body>
 
