@@ -22,33 +22,83 @@ body {
 
 /**/
 #App {
-    margin: 2rem 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/**/
+.shopping-cart {
+    border-radius: 25%;
+    border: 1px solid #000;
+    background-color: #ff0000;
+    padding: 1rem;
+}
+
+.shopping-cart div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+
+}
+
+.listCart {
+    text-align: start;
+    margin-top: 5rem;
+    padding: 0 4rem;
 }
 
 /* Definicion CARD */
 .card {
-    /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgb(34, 34, 34);
     transition: 0.3s;
-    margin: 0 1rem 1rem 0;
+    padding: 1rem;
+    margin: 0 0 1rem 1rem;
 }
 
 .card:hover {
     box-shadow: 0 8px 16px 0 #ff0000;
 }
 
-.containerCard {
+.card-body {
+    margin-top: 1rem;
     padding: 2px 16px;
     border-bottom: 1px solid #000;
 }
 
-/* Icono del Carrito*/
-.shopping-cart {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: start;
+.img-card {
+    width: 100%;
+}
 
+.containerCard p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.containerButton {
+    padding: 1rem;
+}
+
+.btn {
+    margin: 1rem;
+    background-color: #0275d8;
+    border: none;
+    color: white;
+    padding: 0.9rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+}
+.btn:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Footer */
+.footer {
+    height: 20vh;
+    background-color: #000;
 }
 
 /* Definicion del container*/

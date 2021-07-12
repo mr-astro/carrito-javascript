@@ -31,14 +31,31 @@
     <!-- MAIN -->
     <main id='App' class="container row">
         <div class="shopping-cart col-12 col-lg-4">
-            <h2>Carrito de compras</h2> <i class="fas fa-shopping-cart fa-2x"></i>
+            <div>
+                <h2>Carrito de compras</h2> <i class="fas fa-shopping-cart fa-2x"></i>
+            </div>
+            
+            <ul class="listCart"><li id>Hola</li></ul>
         </div>
         <div id="result" class="col-12 col-lg-8 row"></div>
         </div>
     </main>
+    <!-- Template Card-->
+    <template id="template-card">
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+                <img src="" alt="" class="img-card">
+                <div class="card-body">
+                    <h5>Titulo</h5>
+                    <p>Precio <span></span></p>
+                </div>
+                <button class="btn">Comprar</button>
+            </div>
+        </div>
+    </template>
 
     <!-- FOOTER -->
-    <footer></footer>
+    <footer class="footer"></footer>
 
     <!-- Javascript -->
     <script src="./assets/js/script.js"></script>
