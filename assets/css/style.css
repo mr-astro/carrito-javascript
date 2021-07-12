@@ -95,10 +95,34 @@ body {
     color: white;
 }
 
+.btnPluss {
+    background-color: #0275d8;
+    font-size: 2rem;
+    display: inline-block;
+}
+
+.btnLess {
+    background-color: #ff0000;
+    font-size: 2rem;
+    display: inline-block;
+}
+
+/* Carrito */
+
+.totalFooter {
+    border-top: 3px solid #000;
+}
+
 /* Footer */
 .footer {
+    font-size: 1.5rem;
     height: 20vh;
     background-color: #000;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Definicion del container*/
